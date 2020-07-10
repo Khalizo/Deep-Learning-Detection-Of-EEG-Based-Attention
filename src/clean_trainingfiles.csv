@@ -111,7 +111,6 @@ path,user,test,no_para,are_timestamps_distinct,initial_rows,final_rows,dropped_r
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User022a_Group_Test_10-09-2019--13-16-07/User022a_test9_BET_09_10-09-2019/User022a_test9_BET_09_10-09-2019_recording0,22,9,5,True,11042,10831,211
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User022a_Group_Test_10-09-2019--13-16-07/User022a_test10_IDT_10_10-09-2019/User022a_test10_IDT_10_10-09-2019_recording0,22,10,5,True,11624,11374,250
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User022a_Group_Test_10-09-2019--13-16-07/User022a_test11_BDT_11_10-09-2019/User022a_test11_BDT_11_10-09-2019_recording0,22,11,5,True,6980,6771,209
-/cs/home/ybk1/Dissertation/Experiment Anonymised Version/User021a_Group_Test_10-09-2019--11-31-45/User021b_test13_BES_13_10-09-2019/User021b_test13_BES_13_10-09-2019_recording0,21,13,5,True,6356,1131,5225
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User019a_Group_Test_06-09-2019--15-26-42/User019d_test7_BDS_07_06-09-2019/User019d_test7_BDS_07_06-09-2019_recording0,19,7,5,True,3411,2544,867
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User019a_Group_Test_06-09-2019--15-26-42/User019c_test2_IDT_02_06-09-2019/User019c_test2_IDT_02_06-09-2019_recording0,19,2,5,True,2171,1769,402
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User019a_Group_Test_06-09-2019--15-26-42/User019c_test1_BET_01_06-09-2019/User019c_test1_BET_01_06-09-2019_recording0,19,1,5,True,4643,3327,1316
@@ -190,8 +189,6 @@ path,user,test,no_para,are_timestamps_distinct,initial_rows,final_rows,dropped_r
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User020a_Group_Test_09-09-2019--10-26-59/User020a_test8_IET_08_09-09-2019/User020a_test8_IET_08_09-09-2019_recording0,20,8,5,True,13881,13853,28
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User020a_Group_Test_09-09-2019--10-26-59/User020a_test10_IDT_10_09-09-2019/User020a2_test10_IDT_10_09-09-2019_recording0,20,10,5,True,12580,12356,224
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User020a_Group_Test_09-09-2019--10-26-59/User020a_test9_BET_09_09-09-2019/User020a_test9_BET_09_09-09-2019_recording0,20,9,5,True,10247,10164,83
-/cs/home/ybk1/Dissertation/Experiment Anonymised Version/User016a_Group_Test_05-09-2019--17-30-44/User016b_test14_IDS_14_05-09-2019/User016b_test14_IDS_14_05-09-2019_recording0,16,14,5,True,9560,9560,0
-/cs/home/ybk1/Dissertation/Experiment Anonymised Version/User016a_Group_Test_05-09-2019--17-30-44/User016c_test1_BET_01_05-09-2019/User016c_test1_BET_01_05-09-2019_recording0,16,1,5,True,10564,10564,0
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User001_Group_Test_30-08-2019--10-07-00/User001B_test10_IDT_10_30-08-2019/User001B_test10_IDT_10_30-08-2019_recording0,1,10,5,True,2566,2400,166
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User001_Group_Test_30-08-2019--10-07-00/User001C_test11_BDT_11_30-08-2019/User001C_test11_BDT_11_30-08-2019_recording0,1,11,5,True,10099,9322,777
 /cs/home/ybk1/Dissertation/Experiment Anonymised Version/User001_Group_Test_30-08-2019--10-07-00/User001C_test12_IES_12_30-08-2019/User001C_test12_IES_12_30-08-2019_recording0,1,12,5,True,6333,5392,941
