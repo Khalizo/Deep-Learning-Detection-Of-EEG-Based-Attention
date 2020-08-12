@@ -1,0 +1,2 @@
+model,user,label,n_epochs,window_size,duration,num_classes,size,multiple,sigma,bandpass,class_type,accuracy,bal_acc,precision,recall,f1_score_macro,f1_score_micro
+Hybrid,all,attention,500,120,104.39382338523865,5,20751,,,False,multi,0.22505518411403722,0.1885198951340779,0.18512384326770212,0.1885198951340779,0.1259211024852663,0.22505518411403722
