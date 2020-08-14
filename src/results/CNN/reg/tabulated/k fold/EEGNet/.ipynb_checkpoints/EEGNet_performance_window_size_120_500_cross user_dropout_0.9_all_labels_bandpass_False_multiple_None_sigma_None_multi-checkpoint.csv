@@ -1,2 +1,2 @@
 model,user,label,n_epochs,window_size,duration,num_classes,size,multiple,sigma,bandpass,class_type,RMSE,R2
-Hybrid,all,attention,500,120,210.34941267967224,5,20751,,,False,multi,3.44788404429176,-8.51987640519523
+EEGNet,all,attention,500,120,220.76057243347168,5,20751,,,False,multi,3.44788404429176,-8.51987640519523
