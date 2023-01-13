@@ -21,7 +21,7 @@ entrypoints==0.3
 future==0.18.2
 gast==0.3.3
 gitdb==4.0.5
-GitPython==3.1.5
+GitPython==3.1.30
 google-auth==1.16.1
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
