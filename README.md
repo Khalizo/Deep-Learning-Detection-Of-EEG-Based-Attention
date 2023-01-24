@@ -1,7 +1,7 @@
 
 # Deep learning model for EEG-based attention detection
 
-Full report can be found [here]("Dissertation_Final.pdf")
+Full report can be found [here](Dissertation_Final.pdf)
 
 ## Abstract
 
@@ -37,11 +37,13 @@ The EEG CSV files had ten columns: columns 1 – 8 represented the EEG signals f
 
 To create the dataset (Figure 13), this study annotated each of the EEG CSV files using an associated JSON file that included the timestamps for different attention, interest and effort scores. Next, the dataset was cleaned by removing files with following criteria:
 
+![dataset_creation](images/dataset_creation.png)
+
 ## Data Pre-processing
 
 The primary purpose of this study was to reduce the number of steps needed for EEG processing; hence the processing stage was kept to a minimum. However, based on the current literature [76], EEG processing steps such as bandpass filtering, window sampling and feature scaling were still necessary for effective DL- based analysis.
 
-[workflow]()
+![workflow](images/workflow.png)
  
 ## CNN-RNN Model Architecture
 
@@ -49,25 +51,25 @@ CNN-RNN (Hybrid model) was a composition of EEGNet and an LSTM RNN. The reasons 
 
 This study designed an RNN model with four layers: one input layer, one recurrent layer, an output layer and a softmax classification layer. The input size of the RNN was 56, and this was based on the input size of the final linear layer of the CNN. The hidden layer had sixteen hidden neurons and to prevent overfitting, this study determined the number of hidden neurons with this formula:
 
-[formula]("")
+![formula](images/formula.png)
 
 Based on the formula, the 𝛼 can be used to decide the degree of generalisation. As mentioned in “Neural Network design” [90], limiting the number of free parameters in the model to a small portion of degrees of freedom in the data can prevent overfitting. The degrees of freedom in the data is: 𝑵𝒔 ∗ (𝑵𝒊 + 𝑵𝟎), thus changing 𝛼 can prevent overfitting.
 
 After designing the RNN, this study combined it with the EEGNet, by removing the fully connected layer of EEGNet, so that the learned features could be passed into the RNN. Once the features have been passed to the RNN, the RNN trains on the learned to features before classifying using the softmax activation function.
 
-[CNN-RNN]("")
+![CNN-RNN](images/cnn_rnn.png)
 
 ## Results
 
 This study found that the hybrid model was the top-performing model overall with a binary classification accuracy of 73% and multi-class classification of 38%, across and within users. The hybrid model showed a dominant performance within users for binary classification, where it had the highest accuracy for 16 out of 18 users. Notably, the hybrid model had accuracies > 90% for users 11 and 15. EEGNet also had a good performance, beating the baseline accuracy across users for binary (58.79% vs 66%) and multi-class (25% vs 27%). EEGNet also had the joint highest binary classification across users and had the highest multi- class classification for 6 out of 18 users. DeepNet and ShallowNet performed a lot worse than the other models, where DeepNet had the highest accuracy for one user on the binary classification while ShallowNet had no case of highest accuracies.
 
-[results]()
+![results](images/deep_learning_results.png)
 
 ## Conclusions
 
 ### Achievements
 
-The primary objective of this project was to design a deep learning architecture for classifying EEG into scores of attention, interest and effort. To achieve this objective, this project designed a CNN architecture inspired by the Tensorflow implementation of EEGNet [11]. This study then went on to achieve the second primary objective by evaluating the classification results of EEGNet against existing EEG-specific CNN architectures such as ShallowNet and DeepNet using 5-fold cross-validation. Importantly, the secondary objective of the project was to design a variant deep learning architecture to improve the classification results. Indeed this project designed a hybrid deep learning model comprised of EEGNet and an RNN which outperformed the classification results of the other CNN architectures. Most notably, the hybrid model obtained an accuracy of 93% on user 11 with binary classification.
+The primary objective of this project was to design a deep learning architecture for classifying EEG into scores of attention, interest and effort. To achieve this objective, this project designed a CNN architecture inspired by the Tensorflow implementation of EEGNet. This study then went on to achieve the second primary objective by evaluating the classification results of EEGNet against existing EEG-specific CNN architectures such as ShallowNet and DeepNet using 5-fold cross-validation. Importantly, the secondary objective of the project was to design a variant deep learning architecture to improve the classification results. Indeed this project designed a hybrid deep learning model comprised of EEGNet and an RNN which outperformed the classification results of the other CNN architectures. Most notably, the hybrid model obtained an accuracy of 93% on user 11 with binary classification.
 This study also went beyond the primary and secondary objectives to improve the classification results. This study converted the problem from multi-class to binary classification which led to a 30% increase in accuracy. Moreover, data augmentation provided a slight improvement in accuracy for within user analysis.
 
 ### Concluding Remarks
@@ -77,13 +79,22 @@ Finally, the learning outcomes for me from this project were highly rewarding, a
 
 ## Usage
 
-Clone this repository - https://github.com/Khalizo/Deep-Learning-Detection-Of-EEG-
-Based-Attention.git
-2. The directory contains requirements.txt file containing the required libraries: cd Deep-Learning-Detection-Of-EEG-Based-Attention
+1. Clone this repository: 
+```
+git clone https://github.com/Khalizo/Deep-Learning-Detection-Of-EEG-Based-Attention.git
+```
+
+2. Create a new virtual environment and install the Python libraries used in the code by running the following command:
+   
+```
 pip install -r requirements.txt
-1. Download the dataset via the one drive link from here: https://risweb.st-andrews.ac.uk/portal/en/datasets/instrumented-digital-and-paper-reading-dataset(80f522b6-6d23-4751-9023-21a1e3d0eb5a).html
-2. Unzip and move the dataset to src
-3. Run either baseline, EEGNet_Hybrid or ShallowDeep notebooks to observe the performance
+```
+
+3. Download the dataset via the one drive link from here: https://risweb.st-andrews.ac.uk/portal/en/datasets/instrumented-digital-and-paper-reading-dataset(80f522b6-6d23-4751-9023-21a1e3d0eb5a).html
+
+4. Unzip and move the dataset to src
+   
+5. Run:
 Here is how to run each of the models:
 NB: ShallowNet and DeepNet take long to run so if you want to see quick results, best to run
 EEGNet_Hybrid or baseline
