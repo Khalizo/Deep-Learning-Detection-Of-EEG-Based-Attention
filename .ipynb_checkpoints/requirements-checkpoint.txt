@@ -125,7 +125,7 @@ termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
 threadpoolctl==2.1.0
-torch==1.5.1
+torch==1.13.1
 torch-lr-finder==0.2.0
 torchvision==0.6.1
 tornado==6.0.4
