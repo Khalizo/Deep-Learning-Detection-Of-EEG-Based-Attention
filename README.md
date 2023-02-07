@@ -9,7 +9,7 @@ Attention is at the core of neurological/cognitive functions, and deficits in at
 
 Interestingly, the detection of human attention levels can be automated with the use of deep learning (DL). Electroencephalography (EEG) signals provide a great source of information relating to human attention that can be analysed by deep learning algorithms. 
 
-As a result, this study a novel deep learning architecture for EEG-based attention detection that builds upon the current state-of-the-art. The model predicted scores for attention, interest and effort on EEG data set of 18 users. Intra- and inter-subject classification results were evaluated using five-fold cross-validation. Results showed that the proposed model outperformed
+As a result, this study developed a novel deep learning architecture for EEG-based attention detection that builds upon the current state-of-the-art. The model predicted scores for attention, interest and effort on EEG data set of 18 users. Intra- and inter-subject classification results were evaluated using five-fold cross-validation. Results showed that the proposed model outperformed
 other deep learning and baseline models, where it was able to achieve an accuracy of 93% on a single user with binary classification
 
 ## EEG Dataset and Experimental Design
