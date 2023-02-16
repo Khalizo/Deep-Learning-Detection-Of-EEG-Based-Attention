@@ -135,7 +135,7 @@ txt2tags==3.7
 urllib3==1.25.9
 wcwidth==0.2.3
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 widgetsnbextension==3.5.1
 wrapt==1.12.1
 xeus-python==0.7.1
